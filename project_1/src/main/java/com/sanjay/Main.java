@@ -14,8 +14,8 @@ public class Main {
 
     @GetMapping("/greet")
     public GreetResponse greet(){
-        return new GreetResponse("Helo",true);
+        return new GreetResponse("Helo",true,"sanjay");
     }
 
-    record GreetResponse(String response1,boolean response){}
+    record GreetResponse(String response1,boolean response,String name){}
 }
